@@ -23,7 +23,7 @@ Practice merging techniques (merge vs rebase)
     git switch dessert
     git log --oneline
     ```
-    check all branches at once
+  check all branches at once
     ```bash
     git log --oneline --all --graph
     ```
@@ -38,10 +38,18 @@ Practice merging techniques (merge vs rebase)
 - Review the merge result
 - Perform a merge using the `--no-commit` option
     ```bash 
-    git merge --no-commit dessert
+    git merge --no-commit dinner
     ```
 - Review the result of the new merge
+    ```bash
+    git status
+    git log --oneline    
+    ``` 
 - What's the difference between the two merges?
+    ```bash    
+    git commit -am"Merge with dinner with --no-commit option"
+    ``` 
+
 
 ### Rebase
 - Students fork the repository
@@ -53,6 +61,10 @@ Practice merging techniques (merge vs rebase)
     git rebase main-merge
     ```
 - Review the rebase result
+    ```bash
+    git status
+    git log --oneline    
+    ```
 
 ## Conclusions
 Review results and differences, discuss appropriate scenarios for each case
