@@ -15,8 +15,8 @@ Practice merging techniques (merge vs rebase)
     git switch lunch
     git log --oneline
   
-    # Check sidedish branch
-    git switch sidedish
+    # Check dinner branch
+    git switch dinner
     git log --oneline
   
     # Check dessert branch
@@ -46,7 +46,12 @@ Practice merging techniques (merge vs rebase)
 ### Rebase
 - Students fork the repository
 - Analyze each branch (commits, files, content)
-- Perform a rebase
+- Perform a rebase in the dessert branch
+    ```bash
+    git switch dessert
+    git log --oneline
+    git rebase main-merge
+    ```
 - Review the rebase result
 
 ## Conclusions
